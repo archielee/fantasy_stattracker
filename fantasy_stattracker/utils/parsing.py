@@ -1,3 +1,5 @@
+# TODO: This should all probably go in individual resource classes
+
 def get_team_id_map(teams_data):
     '''
     Maps the numerical team IDs to a team name

@@ -1,14 +1,4 @@
 {
     "league_type": "hockey",
-    "league_id": 123456,
-    "num_teams": 12,
-    "num_weeks": 16,
-    "roster": [
-        'C1', 'C2',
-        'LW1', 'LW2',
-        'RW1', 'RW2',
-        'D1', 'D2', 'D3', 'D4',
-        'G1, 'G2',
-        'BN1', 'BN2', 'BN3', 'BN4', 'BN5',
-    ]
+    "league_id": 123456
 }

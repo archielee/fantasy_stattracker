@@ -2,7 +2,7 @@
 Fantasy hockey statistics aggregator and tracking, as well as visualizations
 
 ## Installation
-This program requires Python >=3.6. All dependencies can be installed using `pip install -r requirements.txt`.
+This program requires Python >=3.6. All dependencies can be installed using `pip install .`.
 
 ## Setup
 1. Register for a [Yahoo Developer Network API key](https://developer.yahoo.com/apps/) by creating an app and filling in the relevant information. For URLs, you can use any valid URLs (they don't really matter here, feel free to use [https://github.com/archielee/fantasy_stattracker](https://github.com/archielee/fantasy_stattracker)). Copy the resulting API access key information into `auth_key.json`. Remember to keep these keys private!

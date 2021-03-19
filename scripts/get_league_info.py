@@ -56,11 +56,10 @@ def main(args):
         f.write(json.dumps(league_info, indent=4))
 
 
-
 if __name__ == "__main__":
     parser = argparse.ArgumentParser("Fetch league settings using Yahoo API")
     parser.add_argument("--league_info", "-l", type=str,
-                        default="./league_info.json",
+                        default="./json_files/league_info.json",
                         help="file containing league information details")
     args = parser.parse_args()
     main(args)

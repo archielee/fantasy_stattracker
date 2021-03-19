@@ -138,4 +138,4 @@ dmypy.json
 cython_debug/
 
 # API key files
-auth_key.json
+json_files/auth_key.json

@@ -18,12 +18,13 @@ league_type_to_game_map = {
 def main(args):
     league_info_path = os.path.abspath(args.league_info)
     if not os.path.isfile(league_info_path):
-        raise FileNotFoundError("[get_league_info] Provided league information file \"{}\" does not exist".format(args.league_info))
+        raise FileNotFoundError("[get_league_info] Provided league information file \"{}\" does not exist".format(
+            args.league_info))
 
     with open(league_info_path, "r") as f:
         league_info = json.load(f)
 
-    api = YahooAPI()
+    api = YahooAPI(auth_key_file='../json_files/auth_key.json')
     requester = Requester(api)
 
     if league_info.get("league_key") is None:
@@ -59,7 +60,7 @@ def main(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser("Fetch league settings using Yahoo API")
     parser.add_argument("--league_info", "-l", type=str,
-                        default="./json_files/league_info.json",
+                        default="../json_files/league_info.json",
                         help="file containing league information details")
     args = parser.parse_args()
     main(args)
